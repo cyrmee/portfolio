@@ -1,9 +1,9 @@
 import * as React from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { DayPicker } from "react-day-picker";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
@@ -52,8 +52,8 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ ..._props }) => <FaChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ..._props }) => <FaChevronRight className="h-4 w-4" />,
+        IconLeft: () => <FaChevronLeft className="h-4 w-4" />,
+        IconRight: () => <FaChevronRight className="h-4 w-4" />,
       }}
       {...props}
     />
