@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Mail } from "lucide-react";
+import { Download, Mail, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -28,13 +28,17 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-primary-hover hover:shadow-medium transition-all">
-              <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
+            <Button variant="gradient" size="lg" asChild>
+              <a href="mailto:cyrmee@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Get In Touch
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="hover:bg-secondary transition-colors">
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://docs.google.com/document/d/1bW952D7A45oxZ35u06SGxaTqTDfU1-3Wn5JB_0rY2vk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <FileText className="mr-2 h-5 w-5" />
+                View Resume
+              </a>
             </Button>
           </div>
         </div>

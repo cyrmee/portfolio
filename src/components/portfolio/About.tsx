@@ -12,8 +12,7 @@ import {
 
 const About = () => {
   const skills = [
-    "C#", ".NET", "TypeScript", "Python", "Java", "NestJS", "GraphQL",
-    "AWS", "Azure", "Docker", "Kubernetes", "PostgreSQL", "MongoDB", "Redis"
+    "C#", "TypeScript", "Python", "Java", ".NET", "NestJS", "GraphQL", "AWS", "Azure", "Docker", "Kubernetes", "PostgreSQL", "MongoDB", "Redis", "Stripe", "Chapa"
   ];
 
   const highlights = [
@@ -55,14 +54,10 @@ const About = () => {
               <h3 className="text-2xl font-semibold text-foreground mb-6">Overview</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm a backend engineer with over 2 years of experience building enterprise-grade 
-                  applications and cloud-native solutions. My expertise spans across multiple programming 
-                  languages and cloud platforms, with a focus on creating efficient, maintainable systems.
+                  I see backend engineering as a form of translation—turning complex needs into simple, reliable systems. My latest work translated the challenge of financial analysis into an intuitive semantic search experience using GPT-4o. I’m always learning the next 'language'—technical or otherwise—that helps me solve difficult engineering problems with clarity and purpose.
                 </p>
                 <p>
-                  Currently working at Shega Media and Technology, where I've developed AI-powered 
-                  business intelligence solutions that significantly improved user engagement and 
-                  operational efficiency.
+                  Currently at Shega Media and Technology, where I’ve developed AI-powered business intelligence tools that enhanced both user engagement and internal efficiency. I also recently led the development of a payment API integrating Stripe and Chapa, enabling seamless support for both international and local transactions.
                 </p>
                 <div className="flex items-center space-x-4 text-sm">
                   <div className="flex items-center">
@@ -104,7 +99,7 @@ const About = () => {
                     <Badge 
                       key={skill} 
                       variant="secondary" 
-                      className="px-4 py-2 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
+                      className="px-4 py-2 text-sm font-medium bg-muted text-foreground border border-border hover:bg-primary hover:text-primary-foreground transition-colors cursor-default shadow-soft"
                     >
                       {skill}
                     </Badge>

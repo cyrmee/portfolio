@@ -29,11 +29,9 @@ const Projects = () => {
 
           <div className="grid gap-8">
             {projects.map((project, index) => (
-              <Card 
-                key={index} 
-                className={`border-0 shadow-medium hover:shadow-large transition-all ${
-                  project.featured ? 'ring-2 ring-primary/20' : ''
-                }`}
+              <Card
+                key={index}
+                className={`bg-card border border-border shadow-medium hover:shadow-large transition-all ${project.featured ? 'ring-2 ring-primary/30' : ''}`}
               >
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
@@ -41,29 +39,27 @@ const Projects = () => {
                       <div className="flex items-center gap-3 mb-2">
                         <CardTitle className="text-xl text-foreground">{project.title}</CardTitle>
                         {project.featured && (
-                          <Badge className="bg-gradient-to-r from-primary to-accent text-white">
+                          <Badge className="bg-primary text-background font-semibold">
                             Featured
                           </Badge>
                         )}
                       </div>
-                      <p className="text-sm text-muted-foreground mb-4">{project.date}</p>
-                      <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+                      <p className="text-sm text-secondary mb-4">{project.date}</p>
+                      <p className="text-secondary leading-relaxed">{project.description}</p>
                     </div>
                   </div>
                 </CardHeader>
-                
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary">
+                      <Badge key={tech} variant="secondary" className="bg-muted text-foreground border border-border">
                         {tech}
                       </Badge>
                     ))}
                   </div>
-                  
                   <div className="flex gap-3">
                     {project.githubUrl && (
-                      <Button variant="outline" size="sm" asChild>
+                      <Button variant="outline" size="sm" asChild className="border border-primary text-primary hover:bg-primary/10 hover:text-primary">
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="h-4 w-4 mr-2" />
                           View Code
@@ -71,7 +67,7 @@ const Projects = () => {
                       </Button>
                     )}
                     {project.liveUrl && (
-                      <Button size="sm" asChild>
+                      <Button variant="default" size="sm" asChild className="bg-primary text-background hover:bg-primary-hover">
                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="h-4 w-4 mr-2" />
                           Live Demo

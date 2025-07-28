@@ -1,20 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Github, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, MapPin, Copy } from "lucide-react";
+import { toast } from "@/components/ui/use-toast";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Primary Email",
-      value: "mehretabhailegebriel@proton.me",
-      href: "mailto:mehretabhailegebriel@proton.me"
+      value: "cyrmee@gmail.com",
+      href: "mailto:cyrmee@gmail.com"
     },
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Secondary Email", 
-      value: "cyrmee@gmail.com",
-      href: "mailto:cyrmee@gmail.com"
+      value: "mehretabhailegebriel@proton.me",
+      href: "mailto:mehretabhailegebriel@proton.me"
     },
     {
       icon: <Phone className="h-5 w-5" />,
@@ -70,13 +71,29 @@ const Contact = () => {
                       </div>
                       <div className="flex-1">
                         <div className="text-sm text-muted-foreground">{contact.label}</div>
-                        {contact.href ? (
-                          <a 
-                            href={contact.href} 
-                            className="text-foreground hover:text-primary transition-colors font-medium"
-                          >
-                            {contact.value}
-                          </a>
+                        {contact.href && (contact.label === "Primary Email" || contact.label === "Secondary Email" || contact.label === "Phone") ? (
+                          <div className="flex items-center gap-2">
+                            <a 
+                              href={contact.href} 
+                              className="text-foreground font-medium transition-colors"
+                              onMouseEnter={e => e.currentTarget.style.color = `hsl(var(--primary))`}
+                              onMouseLeave={e => e.currentTarget.style.color = ''}
+                            >
+                              {contact.value}
+                            </a>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              type="button"
+                              aria-label={`Copy ${contact.label}`}
+                              onClick={() => {
+                                navigator.clipboard.writeText(contact.value);
+                                toast({ title: `${contact.label} copied!` });
+                              }}
+                            >
+                              <Copy className="h-4 w-4" />
+                            </Button>
+                          </div>
                         ) : (
                           <div className="text-foreground font-medium">{contact.value}</div>
                         )}
