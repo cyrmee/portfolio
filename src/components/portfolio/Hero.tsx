@@ -3,7 +3,7 @@ import { Download, Mail, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-accent/5 pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-background pt-20">
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
               <div className="mb-8">
