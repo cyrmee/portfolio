@@ -44,8 +44,8 @@ const Projects = () => {
                           </Badge>
                         )}
                       </div>
-                      <p className="text-sm text-secondary mb-4">{project.date}</p>
-                      <p className="text-secondary leading-relaxed">{project.description}</p>
+                      <p className="text-sm text-muted-foreground mb-4">{project.date}</p>
+                      <p className="text-muted-foreground leading-relaxed">{project.description}</p>
                     </div>
                   </div>
                 </CardHeader>
