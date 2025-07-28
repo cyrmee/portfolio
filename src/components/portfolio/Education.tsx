@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Award, ExternalLink } from "lucide-react";
+import { FaGraduationCap, FaAward, FaExternalLinkAlt } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
 const Education = () => {
@@ -51,7 +51,7 @@ const Education = () => {
               <CardHeader>
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 p-3 bg-primary/10 rounded-lg">
-                    <GraduationCap className="h-6 w-6 text-primary" />
+                    <FaGraduationCap className="h-6 w-6 text-primary" />
                   </div>
                   <div className="flex-1">
                     <CardTitle className="text-xl text-foreground mb-2">{education.degree}</CardTitle>
@@ -67,7 +67,7 @@ const Education = () => {
             {/* Certifications */}
             <div>
               <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-3">
-                <Award className="h-6 w-6 text-primary" />
+                <FaAward className="h-6 w-6 text-primary" />
                 Professional Certifications
               </h3>
               
@@ -91,7 +91,7 @@ const Education = () => {
                         <div className="flex-shrink-0 w-full sm:w-auto">
                           <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
                             <a href={cert.credlyUrl} target="_blank" rel="noopener noreferrer">
-                              <ExternalLink className="h-4 w-4 mr-2" />
+                              <FaExternalLinkAlt className="h-4 w-4 mr-2" />
                               View Certificate
                             </a>
                           </Button>

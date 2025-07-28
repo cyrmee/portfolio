@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   const projects = [
@@ -61,7 +61,7 @@ const Projects = () => {
                     {project.githubUrl && (
                       <Button variant="outline" size="sm" asChild className="border border-primary text-primary hover:bg-primary/10 hover:text-primary">
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4 mr-2" />
+                          <FaGithub className="h-4 w-4 mr-2" />
                           View Code
                         </a>
                       </Button>
@@ -69,7 +69,7 @@ const Projects = () => {
                     {project.liveUrl && (
                       <Button variant="default" size="sm" asChild className="bg-primary text-background hover:bg-primary-hover">
                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2" />
+                          <FaExternalLinkAlt className="h-4 w-4 mr-2" />
                           Live Demo
                         </a>
                       </Button>
@@ -86,7 +86,7 @@ const Projects = () => {
             </p>
             <Button variant="outline" size="lg" asChild>
               <a href="https://github.com/cyrmee" target="_blank" rel="noopener noreferrer">
-                <Github className="h-5 w-5 mr-2" />
+                <FaGithub className="h-5 w-5 mr-2" />
                 View All Projects on GitHub
               </a>
             </Button>

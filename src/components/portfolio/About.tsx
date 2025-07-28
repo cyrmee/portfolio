@@ -1,14 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Server, 
-  Cloud, 
-  Database, 
-  Code, 
-  Award,
-  MapPin,
-  Calendar
-} from "lucide-react";
+import { LuServer, LuCloud, LuDatabase, LuCode, LuMapPin, LuCalendar } from "react-icons/lu";
 
 const About = () => {
   const skills = [
@@ -17,29 +9,29 @@ const About = () => {
 
   const highlights = [
     {
-      icon: <Server className="h-6 w-6 text-primary" />,
+      icon: <LuServer className="h-6 w-6 text-primary" />,
       title: "Backend Systems",
       description: "Architecting scalable backend solutions with modern frameworks and cloud technologies"
     },
     {
-      icon: <Cloud className="h-6 w-6 text-primary" />,
+      icon: <LuCloud className="h-6 w-6 text-primary" />,
       title: "Cloud Solutions",
       description: "AWS & Azure certified with hands-on experience deploying production systems"
     },
     {
-      icon: <Database className="h-6 w-6 text-primary" />,
+      icon: <LuDatabase className="h-6 w-6 text-primary" />,
       title: "Data Engineering",
       description: "Optimizing database performance and building efficient data pipelines"
     },
     {
-      icon: <Code className="h-6 w-6 text-primary" />,
+      icon: <LuCode className="h-6 w-6 text-primary" />,
       title: "AI Integration",
       description: "Implementing AI-powered features and semantic search solutions"
     }
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -61,11 +53,11 @@ const About = () => {
                 </p>
                 <div className="flex items-center space-x-4 text-sm">
                   <div className="flex items-center">
-                    <MapPin className="h-4 w-4 mr-1 text-primary" />
+                    <LuMapPin className="h-4 w-4 mr-1 text-primary" />
                     Addis Ababa, Ethiopia
                   </div>
                   <div className="flex items-center">
-                    <Calendar className="h-4 w-4 mr-1 text-primary" />
+                    <LuCalendar className="h-4 w-4 mr-1 text-primary" />
                     Available for opportunities
                   </div>
                 </div>
@@ -98,7 +90,6 @@ const About = () => {
                   {skills.map((skill) => (
                     <Badge 
                       key={skill} 
-                      variant="secondary" 
                       className="px-4 py-2 text-sm font-medium bg-muted text-foreground border border-border hover:bg-primary hover:text-primary-foreground transition-colors cursor-default shadow-soft"
                     >
                       {skill}

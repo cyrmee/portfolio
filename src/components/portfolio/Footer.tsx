@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg transition-colors hover:bg-primary/10"
               >
-                <Github className="h-6 w-6 text-primary" />
+                <FaGithub className="h-6 w-6 text-primary" />
               </a>
               <a
                 href="https://www.linkedin.com/in/mehretab-hailegebriel"
@@ -26,13 +26,13 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg transition-colors hover:bg-primary/10"
               >
-                <Linkedin className="h-6 w-6 text-primary" />
+                <FaLinkedin className="h-6 w-6 text-primary" />
               </a>
               <a
                 href="mailto:mehretabhailegebriel@proton.me"
                 className="p-2 rounded-lg transition-colors hover:bg-primary/10"
               >
-                <Mail className="h-6 w-6 text-primary" />
+                <FaEnvelope className="h-6 w-6 text-primary" />
               </a>
               <a
                 href="https://wa.me/251942547895"

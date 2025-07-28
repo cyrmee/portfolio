@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
           rel="noopener noreferrer"
           className="hover:scale-110 transition-transform"
         >
-          <Github className="h-8 w-8 text-foreground" />
+          <FaGithub className="h-8 w-8 text-foreground" />
         </a>
         <a
           href="https://www.linkedin.com/in/mehretab-hailegebriel"
@@ -19,7 +19,7 @@ const Header = () => {
           rel="noopener noreferrer"
           className="hover:scale-110 transition-transform"
         >
-          <Linkedin className="h-8 w-8 text-foreground" />
+          <FaLinkedin className="h-8 w-8 text-foreground" />
         </a>
       </div>
     </header>

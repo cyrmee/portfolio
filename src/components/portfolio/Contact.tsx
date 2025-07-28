@@ -1,30 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Github, Linkedin, MapPin, Copy } from "lucide-react";
+import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaMapMarkerAlt, FaRegCopy } from "react-icons/fa";
 import { toast } from "@/components/ui/use-toast";
 
 const Contact = () => {
   const contactInfo = [
     {
-      icon: <Mail className="h-5 w-5" />,
+      icon: <FaEnvelope className="h-5 w-5" />,
       label: "Primary Email",
       value: "cyrmee@gmail.com",
       href: "mailto:cyrmee@gmail.com"
     },
     {
-      icon: <Mail className="h-5 w-5" />,
+      icon: <FaEnvelope className="h-5 w-5" />,
       label: "Secondary Email", 
       value: "mehretabhailegebriel@proton.me",
       href: "mailto:mehretabhailegebriel@proton.me"
     },
     {
-      icon: <Phone className="h-5 w-5" />,
+      icon: <FaPhone className="h-5 w-5" />,
       label: "Phone",
       value: "+251942547895",
       href: "tel:+251942547895"
     },
     {
-      icon: <MapPin className="h-5 w-5" />,
+      icon: <FaMapMarkerAlt className="h-5 w-5" />,
       label: "Location",
       value: "Addis Ababa, Ethiopia",
       href: null
@@ -33,13 +33,13 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: <Github className="h-6 w-6" />,
+      icon: <FaGithub className="h-6 w-6" />,
       label: "GitHub",
       href: "https://github.com/cyrmee",
       description: "View my code repositories"
     },
     {
-      icon: <Linkedin className="h-6 w-6" />,
+      icon: <FaLinkedin className="h-6 w-6" />,
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/mehretab-hailegebriel",
       description: "Connect with me professionally"
@@ -92,7 +92,7 @@ const Contact = () => {
                                     toast({ title: `${contact.label} copied!` });
                                   }}
                                 >
-                                  <Copy className="h-4 w-4" />
+                                  <FaRegCopy className="h-4 w-4" />
                                 </Button>
                               </div>
                             ) : (
@@ -133,7 +133,7 @@ const Contact = () => {
                         asChild
                       >
                         <a href="mailto:cyrmee@gmail.com">
-                          <Mail className="mr-2 h-5 w-5" />
+                          <FaEnvelope className="mr-2 h-5 w-5" />
                           Send Email
                         </a>
                       </Button>

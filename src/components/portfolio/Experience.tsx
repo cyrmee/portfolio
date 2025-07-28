@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building, Calendar, MapPin } from "lucide-react";
+import { LuBuilding, LuCalendar, LuMapPin } from "react-icons/lu";
 
 const Experience = () => {
   const experiences = [
@@ -74,16 +74,16 @@ const Experience = () => {
                     <div>
                       <CardTitle className="text-xl text-foreground mb-2">{exp.title}</CardTitle>
                       <div className="flex items-center text-primary font-medium mb-2">
-                        <Building className="h-4 w-4 mr-2" />
+                        <LuBuilding className="h-4 w-4 mr-2" />
                         {exp.company}
                       </div>
                       <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
                         <div className="flex items-center">
-                          <Calendar className="h-4 w-4 mr-1" />
+                          <LuCalendar className="h-4 w-4 mr-1" />
                           {exp.period}
                         </div>
                         <div className="flex items-center">
-                          <MapPin className="h-4 w-4 mr-1" />
+                          <LuMapPin className="h-4 w-4 mr-1" />
                           {exp.location}
                         </div>
                       </div>
