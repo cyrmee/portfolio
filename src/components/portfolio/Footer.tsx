@@ -6,12 +6,12 @@ const Footer = () => {
     <footer className="bg-background text-foreground py-12 border-t border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-center md:text-left">
+            <div className="mx-auto md:mx-0">
               <h3 className="text-xl font-bold mb-2">Mehretab Hailegebriel</h3>
               <p className="text-muted-foreground">Backend Engineer • AWS Solutions Architect</p>
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center justify-center md:justify-start space-x-4 mx-auto md:mx-0">
               <a
                 href="https://github.com/cyrmee"
                 target="_blank"

@@ -73,14 +73,14 @@ const Education = () => {
               
               <div className="grid gap-6">
                 {certifications.map((cert, index) => (
-                  <Card key={index} className="border-0 shadow-medium hover:shadow-large transition-shadow">
-                    <CardContent className="p-6">
+                  <Card key={index} className="border-0 shadow-medium hover:shadow-large transition-shadow w-full">
+                    <CardContent className="p-4 sm:p-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                         <div className="flex-1">
-                          <div className="flex items-center gap-3 mb-2">
+                          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mb-2">
                             <h4 className="font-semibold text-foreground">{cert.name}</h4>
                             {cert.featured && (
-                              <Badge className="bg-accent text-accent-foreground">
+                              <Badge className="bg-accent text-accent-foreground w-fit sm:w-auto">
                                 AWS Certified
                               </Badge>
                             )}
@@ -88,9 +88,8 @@ const Education = () => {
                           <div className="text-primary font-medium mb-1">{cert.issuer}</div>
                           <div className="text-sm text-muted-foreground">{cert.period}</div>
                         </div>
-                        
-                        <div className="flex-shrink-0">
-                          <Button variant="outline" size="sm" asChild>
+                        <div className="flex-shrink-0 w-full sm:w-auto">
+                          <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
                             <a href={cert.credlyUrl} target="_blank" rel="noopener noreferrer">
                               <ExternalLink className="h-4 w-4 mr-2" />
                               View Certificate
