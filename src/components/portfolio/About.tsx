@@ -25,7 +25,7 @@ const About = () => {
     "PostgreSQL",
     "MongoDB",
     "Redis",
-    "Stripe"
+    "Stripe",
   ];
 
   const highlights = [
@@ -76,21 +76,23 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I see backend engineering as a form of translation—turning
-                  complex needs into simple, reliable systems. My latest work
-                  translated the challenge of financial analysis into an
-                  intuitive semantic search experience using GPT-4o. I’m always
-                  learning the next 'language'—technical or otherwise—that helps
-                  me solve difficult engineering problems with clarity and
-                  purpose.
+                  I see backend engineering as a form of translation — turning
+                  complex needs into simple, reliable solutions. For me, it’s
+                  not just about writing code, but about creating systems that
+                  genuinely make people’s lives easier.
                 </p>
                 <p>
-                  Currently at Shega Media and Technology, where I’ve developed
-                  AI-powered business intelligence tools that enhanced both user
-                  engagement and internal efficiency. I also recently led the
-                  development of a payment API integrating Stripe and Chapa,
-                  enabling seamless support for both international and local
-                  transactions.
+                  I specialize in C#/.NET, Python, and cloud platforms (AWS &
+                  Azure), using these tools to design solutions that are
+                  scalable, efficient, and built for impact. Whether it’s
+                  accelerating access to data, streamlining operations, or
+                  powering AI-driven insights, I focus on clarity and purpose in
+                  every project.
+                </p>
+                <p>
+                  I’m always learning the next “language” — technical or
+                  otherwise — that helps me solve hard engineering problems and
+                  build technology that works for people
                 </p>
                 <div className="flex items-center space-x-4 text-sm">
                   <div className="flex items-center">

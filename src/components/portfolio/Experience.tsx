@@ -9,7 +9,7 @@ const Experience = () => {
       location: "Addis Ababa, Ethiopia",
       period: "Dec 2024 – Present",
       achievements: [
-        "Engineered Shega's first AI-powered business intelligence search using GPT-4o and Azure AI Foundry, addressing Ethiopia's data scarcity by aggregating insights and enabling semantic search—tripling engagement, cutting search time by 95%",
+        "Engineered Shega's first AI-powered business intelligence search using GTP-5 and Azure AI Foundry, addressing Ethiopia's data scarcity by aggregating insights and enabling semantic search—tripling engagement, cutting search time by 95%",
         "Created vector search indexes on Azure AI Search using Python notebooks for semantic search over structured and unstructured data in Azure Blob Storage, improving search relevance scores by 35%",
         "Optimized data flow from Azure Blob to MongoDB using Azure Functions, reducing storage costs 80% and improving reporting speed 5x",
         "Developed a GraphQL API (C#, MongoDB, HotChocolate) that accelerated time-series data retrieval, with requests completing in 400-900ms",
