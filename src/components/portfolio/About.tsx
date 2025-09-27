@@ -82,14 +82,6 @@ const About = () => {
                   genuinely make people’s lives easier.
                 </p>
                 <p>
-                  I specialize in C#/.NET, Python, and cloud platforms (AWS &
-                  Azure), using these tools to design solutions that are
-                  scalable, efficient, and built for impact. Whether it’s
-                  accelerating access to data, streamlining operations, or
-                  powering AI-driven insights, I focus on clarity and purpose in
-                  every project.
-                </p>
-                <p>
                   I’m always learning the next “language” — technical or
                   otherwise — that helps me solve hard engineering problems and
                   build technology that works for people
