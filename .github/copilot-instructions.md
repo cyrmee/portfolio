@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-- **Stack:** Vite + React + TypeScript + Tailwind CSS + shadcn-ui + Radix UI + Supabase
+- **Stack:** Vite + React + TypeScript + Tailwind CSS + shadcn-ui + Radix UI
 - **Purpose:** Personal portfolio site, modular and easily extensible, with Lovable.dev integration for AI-driven editing and deployment.
 
 ## Architecture & Structure
@@ -12,7 +12,6 @@
 - **Portfolio Sections:** Modular components in `src/components/portfolio/` (e.g., `Header`, `Hero`, `About`, etc.) are composed in `Index.tsx`.
 - **UI Library:** All reusable UI primitives are in `src/components/ui/` (shadcn-ui, Radix UI wrappers, custom logic).
 - **Hooks:** Custom hooks live in `src/hooks/`.
-- **Supabase Integration:** Use `src/integrations/supabase/client.ts` for DB access. Types are in `src/integrations/supabase/types.ts`. Always import as `import { supabase } from "@/integrations/supabase/client"`.
 - **Utilities:** Shared helpers in `src/lib/utils.ts`.
 
 ## Developer Workflows
@@ -35,16 +34,10 @@
 - **React Query:** Use `@tanstack/react-query` for async state (see `App.tsx`).
 - **Toasts:** Use both `Toaster` and `Sonner` from `src/components/ui/` for notifications.
 
-## External Integrations
-
-- **Supabase:** All DB/API calls via the provided client. Do not hardcode keys elsewhere.
-- **Lovable.dev:** Project is tightly integrated; see README for workflow.
-
 ## Examples
 
 - To add a new portfolio section: create a component in `src/components/portfolio/`, import and add to `Index.tsx`.
 - To add a new UI primitive: create in `src/components/ui/`, follow shadcn-ui/Radix patterns.
-- To query Supabase: `const { data, error } = await supabase.from('table').select('*')`
 
 ---
 

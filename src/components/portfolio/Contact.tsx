@@ -7,7 +7,6 @@ import {
   FaLinkedin,
   FaMapMarkerAlt,
   FaPhone,
-  FaRegCopy,
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -76,9 +75,9 @@ const Contact = () => {
                       Contact Information
                     </h3>
                     <div className="space-y-4">
-                      {contactInfo.map((contact, index) => (
+                      {contactInfo.map((contact) => (
                         <div
-                          key={index}
+                          key={contact.value}
                           className="flex items-center space-x-4"
                         >
                           <div className="flex-shrink-0 p-2 bg-primary/10 rounded-lg text-primary">
@@ -88,25 +87,18 @@ const Contact = () => {
                             <div className="text-sm text-muted-foreground">
                               {contact.label}
                             </div>
-                            <div
-                              className="text-foreground font-medium cursor-pointer"
+                            <button
+                              className="text-foreground font-medium cursor-pointer bg-transparent border-none p-0 hover:text-primary"
                               onClick={() => {
                                 navigator.clipboard.writeText(contact.value);
                                 toast({
                                   title: `${contact.label} copied!`,
                                 });
                               }}
-                              onMouseEnter={(e) =>
-                                (e.currentTarget.style.color = `hsl(var(--primary))`)
-                              }
-                              onMouseLeave={(e) =>
-                                (e.currentTarget.style.color = "")
-                              }
-                              role="button"
                               aria-label={`Copy ${contact.label}`}
                             >
                               {contact.value}
-                            </div>
+                            </button>
                           </div>
                         </div>
                       ))}
@@ -120,9 +112,9 @@ const Contact = () => {
                       Let's Connect
                     </h3>
                     <div className="space-y-4 mb-6">
-                      {socialLinks.map((social, index) => (
+                      {socialLinks.map((social) => (
                         <div
-                          key={index}
+                          key={social.href}
                           className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 p-4 border border-border rounded-lg hover:bg-muted/50 transition-colors w-full"
                         >
                           <div className="flex-shrink-0 text-primary">
@@ -153,21 +145,6 @@ const Contact = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="space-y-3">
-                      <Button
-                        className="w-full bg-gradient-to-r from-primary to-primary-hover"
-                        size="lg"
-                        asChild
-                      >
-                        <a href="mailto:cyrmee@gmail.com">
-                          <FaEnvelope className="mr-2 h-5 w-5" />
-                          Send Email
-                        </a>
-                      </Button>
-                      <p className="text-sm text-muted-foreground text-center">
-                        I typically respond within 24 hours
-                      </p>
-                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -188,6 +165,8 @@ const Contact = () => {
                 Start a Conversation
               </a>
             </Button>
+            <div className="space-y-3">
+            </div>
           </div>
         </div>
       </div>

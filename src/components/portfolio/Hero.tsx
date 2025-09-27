@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <img
-              src="https://fgyyisjxrzstiegcfobf.supabase.co/storage/v1/object/public/portfolio//2U7A4262.webp"
+              src="https://msho7drretuycth4.public.blob.vercel-storage.com/2U7A4262.webp"
               alt="Mehretab Hailegebriel"
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-primary/20 shadow-large"
             />

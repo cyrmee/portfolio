@@ -25,8 +25,7 @@ const About = () => {
     "PostgreSQL",
     "MongoDB",
     "Redis",
-    "Stripe",
-    "Chapa",
+    "Stripe"
   ];
 
   const highlights = [
