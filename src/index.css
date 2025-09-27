@@ -6,34 +6,34 @@
 
 @layer base {
   :root {
-    --background: 250 17% 14%; /* #1F1C2C */
-    --foreground: 0 0% 100%; /* #FFFFFF */
+    --background: 22 27% 80%; /* #DAC9BF Light beige background */
+    --foreground: 300 3% 13%; /* #232123 Dark gray text */
 
-    --card: 250 17% 18%; /* #28243A, slightly lighter for cards */
-    --card-foreground: 0 0% 100%; /* #FFFFFF */
+    --card: 22 27% 85%; /* Lighter beige for cards */
+    --card-foreground: 300 3% 13%; /* #232123 Dark gray text */
 
-    --popover: 250 17% 18%; /* #28243A */
-    --popover-foreground: 0 0% 100%; /* #FFFFFF */
+    --popover: 22 27% 85%; /* Lighter beige for popovers */
+    --popover-foreground: 300 3% 13%; /* #232123 Dark gray text */
 
-    --primary: 257 17% 65%; /* #928DAB Muted Lavender */
-    --primary-foreground: 250 17% 14%; /* #1F1C2C */
-    --primary-hover: 257 17% 55%; /* darker Lavender */
+    --primary: 300 3% 13%; /* #232123 Dark gray primary */
+    --primary-foreground: 22 27% 80%; /* #DAC9BF Light beige text on primary */
+    --primary-hover: 300 3% 20%; /* Slightly lighter dark gray on hover */
 
-    --secondary: 250 17% 40%; /* #5B5670 */
-    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary: 22 15% 60%; /* Muted beige secondary */
+    --secondary-foreground: 300 3% 13%; /* #232123 Dark gray text */
 
-    --muted: 250 17% 12%; /* #191726, muted navy */
-    --muted-foreground: 257 17% 65%; /* #928DAB */
+    --muted: 22 27% 75%; /* Muted beige */
+    --muted-foreground: 300 3% 25%; /* Slightly lighter dark gray */
 
-    --accent: 257 17% 65%; /* #928DAB Muted Lavender */
-    --accent-foreground: 250 17% 14%; /* #1F1C2C */
+    --accent: 300 3% 13%; /* #232123 Dark gray accent */
+    --accent-foreground: 22 27% 80%; /* #DAC9BF Light beige text */
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 22 27% 80%; /* Light beige on destructive */
 
-    --border: 250 17% 22%; /* #342F48, navy border */
-    --input: 250 17% 22%; /* #342F48 */
-    --ring: 257 17% 65%; /* #928DAB Muted Lavender */
+    --border: 22 15% 70%; /* Muted beige border */
+    --input: 22 15% 70%; /* Muted beige input background */
+    --ring: 300 3% 13%; /* #232123 Dark gray ring */
 
     /* Custom design tokens */
     --gradient-primary: linear-gradient(
@@ -55,18 +55,18 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 250 17% 14%; /* #1F1C2C */
-    --sidebar-foreground: 0 0% 100%; /* #FFFFFF */
-    --sidebar-primary: 257 17% 65%; /* #928DAB Muted Lavender */
-    --sidebar-primary-foreground: 250 17% 14%; /* #1F1C2C */
-    --sidebar-accent: 257 17% 65%; /* #928DAB Muted Lavender */
-    --sidebar-accent-foreground: 0 0% 100%; /* #FFFFFF */
-    --sidebar-border: 250 17% 22%; /* #342F48 */
-    --sidebar-ring: 257 17% 65%; /* #928DAB Muted Lavender */
+    --sidebar-background: 22 27% 80%; /* #DAC9BF Light beige */
+    --sidebar-foreground: 300 3% 13%; /* #232123 Dark gray */
+    --sidebar-primary: 300 3% 13%; /* #232123 Dark gray */
+    --sidebar-primary-foreground: 22 27% 80%; /* #DAC9BF Light beige */
+    --sidebar-accent: 300 3% 13%; /* #232123 Dark gray */
+    --sidebar-accent-foreground: 22 27% 80%; /* #DAC9BF Light beige */
+    --sidebar-border: 22 15% 70%; /* Muted beige border */
+    --sidebar-ring: 300 3% 13%; /* #232123 Dark gray */
   }
 
   .dark {
-    --background: 250 17% 14%;
+    --background: 250 17% 14%; /* Keep original dark theme */
     --foreground: 0 0% 100%;
     --card: 250 17% 18%;
     --card-foreground: 0 0% 100%;
