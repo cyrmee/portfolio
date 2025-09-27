@@ -22,20 +22,22 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Featured Projects
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Personal and professional projects showcasing my technical
-              expertise
-            </p>
+            <div className="glass-light rounded-2xl p-6 w-fit mx-auto mb-8">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Featured Projects
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Personal and professional projects showcasing my technical
+                expertise
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-8">
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className={`bg-card border border-border shadow-medium hover:shadow-large transition-all ${
+                className={`glass border-glass-border rounded-2xl glass-hover transition-all duration-300 ${
                   project.featured ? "ring-2 ring-primary/30" : ""
                 }`}
               >
@@ -67,7 +69,7 @@ const Projects = () => {
                       <Badge
                         key={tech}
                         variant="secondary"
-                        className="bg-muted text-foreground border border-border"
+                        className="glass-light border border-glass-border hover:border-glass-border-hover transition-all duration-300 hover:scale-105"
                       >
                         {tech}
                       </Badge>
@@ -79,7 +81,7 @@ const Projects = () => {
                         variant="outline"
                         size="sm"
                         asChild
-                        className="border border-primary text-primary hover:bg-primary/10 hover:text-primary"
+                        className="glass-button border-glass-border hover:border-glass-border-hover"
                       >
                         <a
                           href={project.githubUrl}
@@ -96,7 +98,7 @@ const Projects = () => {
                         variant="default"
                         size="sm"
                         asChild
-                        className="bg-primary text-background hover:bg-primary-hover"
+                        className="glass-button bg-primary text-primary-foreground border-glass-border hover:border-glass-border-hover"
                       >
                         <a
                           href={project.liveUrl}
@@ -118,7 +120,7 @@ const Projects = () => {
             <p className="text-muted-foreground mb-6">
               Want to see more of my work?
             </p>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="outline" size="lg" asChild className="glass-button border-glass-border hover:border-glass-border-hover">
               <a
                 href="https://github.com/cyrmee"
                 target="_blank"

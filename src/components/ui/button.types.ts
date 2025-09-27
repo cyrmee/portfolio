@@ -10,11 +10,11 @@ export const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/80 shadow-medium",
         outline:
-          "border border-border bg-background text-foreground hover:bg-accent hover:text-accent-foreground shadow-soft",
+          "border border-glass-border bg-glass-dark text-foreground hover:bg-glass-light hover:text-accent-foreground shadow-soft backdrop-blur-md",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-soft",
+          "bg-glass-light text-secondary-foreground hover:bg-glass-light border border-glass-border shadow-soft backdrop-blur-md",
         ghost:
-          "bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground shadow-none",
+          "bg-transparent text-foreground hover:bg-glass-dark hover:text-accent-foreground shadow-none backdrop-blur-sm",
         link: "text-primary underline-offset-4 hover:underline shadow-none",
         gradient:
           "bg-gradient-to-r from-primary to-primary-hover text-primary-foreground hover:shadow-medium",

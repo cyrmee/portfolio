@@ -57,19 +57,21 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Get In Touch
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ready to discuss opportunities or collaborate on exciting
-              projects? I'd love to hear from you.
-            </p>
+            <div className="glass-light rounded-2xl p-6 w-fit mx-auto mb-8">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Get In Touch
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Ready to discuss opportunities or collaborate on exciting
+                projects? I'd love to hear from you.
+              </p>
+            </div>
           </div>
-          <Card className="bg-card border-0 shadow-medium rounded-xl p-6">
+          <Card className="glass border-0 rounded-2xl p-6 glass-hover">
             <CardContent className="p-0">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-0 justify-items-center">
                 {/* Contact Information */}
-                <Card className="border-0 shadow-none w-full max-w-md mx-auto bg-transparent">
+                <Card className="glass-light border border-glass-border shadow-glass w-full max-w-md mx-auto rounded-xl">
                   <CardContent className="p-4 sm:p-8">
                     <h3 className="text-xl font-semibold text-foreground mb-6">
                       Contact Information
@@ -106,7 +108,7 @@ const Contact = () => {
                   </CardContent>
                 </Card>
                 {/* Quick Actions */}
-                <Card className="border-0 shadow-none w-full max-w-md mx-auto bg-transparent">
+                <Card className="glass-light border border-glass-border shadow-glass w-full max-w-md mx-auto rounded-xl">
                   <CardContent className="p-4 sm:p-8">
                     <h3 className="text-xl font-semibold text-foreground mb-6">
                       Let's Connect
@@ -115,7 +117,7 @@ const Contact = () => {
                       {socialLinks.map((social) => (
                         <div
                           key={social.href}
-                          className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 p-4 border border-border rounded-lg hover:bg-muted/50 transition-colors w-full"
+                          className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 p-4 glass-light border border-glass-border rounded-lg hover:border-glass-border-hover transition-all duration-300 hover:scale-105 w-full"
                         >
                           <div className="flex-shrink-0 text-primary">
                             {social.icon}
@@ -151,7 +153,7 @@ const Contact = () => {
             </CardContent>
           </Card>
           {/* Call to Action */}
-          <div className="text-center bg-card rounded-lg p-8 mt-8">
+          <div className="text-center glass rounded-2xl p-8 mt-8">
             <h3 className="text-2xl font-semibold text-foreground mb-4">
               Ready to Work Together?
             </h3>
@@ -160,7 +162,7 @@ const Contact = () => {
               have an exciting project in mind, I'm always open to discussing
               new opportunities.
             </p>
-            <Button size="lg" asChild>
+            <Button size="lg" asChild className="glass-button bg-primary text-primary-foreground border-glass-border hover:border-glass-border-hover">
               <a href="mailto:mehretabhailegebriel@proton.me">
                 Start a Conversation
               </a>

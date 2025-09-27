@@ -25,6 +25,15 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // Glassmorphic colors
+        glass: {
+          light: "rgba(218, 201, 191, 0.7)",
+          dark: "rgba(35, 33, 35, 0.7)",
+          border: "rgba(255, 255, 255, 0.3)",
+          "border-hover": "rgba(255, 255, 255, 0.5)",
+        },
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -91,6 +100,14 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backdropFilter: {
+        'blur-10': 'blur(10px)',
+        'blur-15': 'blur(15px)',
+        'blur-20': 'blur(20px)',
+      },
+      boxShadow: {
+        'glass': 'var(--shadow-glass)',
       },
     },
   },

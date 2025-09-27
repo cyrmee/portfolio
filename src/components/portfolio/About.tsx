@@ -56,17 +56,19 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background overflow-hidden">
+    <section id="about" className="py-20 bg-background overflow-hidden relative">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              About Me
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A results-driven backend engineer passionate about building
-              robust, scalable systems
-            </p>
+            <div className="glass-light rounded-2xl p-6 w-fit mx-auto mb-8">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                About Me
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                A results-driven backend engineer passionate about building
+                robust, scalable systems
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -107,13 +109,13 @@ const About = () => {
               </div>
             </div>
 
-            <div>
+            <div className="glass rounded-2xl p-8 glass-hover">
               <h3 className="text-2xl font-semibold text-foreground mb-6">
                 Key Highlights
               </h3>
               <div className="grid gap-4">
                 {highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-start space-x-3">
+                  <div key={index} className="flex items-start space-x-3 glass-light rounded-xl p-4">
                     <div className="flex-shrink-0 mt-1">{highlight.icon}</div>
                     <div>
                       <h4 className="font-medium text-foreground">
@@ -130,16 +132,18 @@ const About = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">
-              Technical Skills
-            </h3>
-            <Card className="border-0 shadow-medium">
+            <div className="glass-light rounded-2xl p-6 w-fit mx-auto mb-8">
+              <h3 className="text-2xl font-semibold text-foreground text-center">
+                Technical Skills
+              </h3>
+            </div>
+            <Card className="glass border-0 rounded-2xl glass-hover">
               <CardContent className="p-8">
                 <div className="flex flex-wrap gap-3 justify-center">
                   {skills.map((skill) => (
                     <Badge
                       key={skill}
-                      className="px-4 py-2 text-sm font-medium bg-muted text-foreground border border-border hover:bg-primary hover:text-primary-foreground transition-colors cursor-default shadow-soft"
+                      className="px-4 py-2 text-sm font-medium glass-light border-glass-border hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default shadow-glass hover:scale-105"
                     >
                       {skill}
                     </Badge>

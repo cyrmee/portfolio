@@ -6,33 +6,37 @@
 
 @layer base {
   :root {
-    --background: 250 17% 14%; /* #1F1C2C */
+    --background: 250 17% 14%; /* #1F1C2C - Dark background for contrast */
     --foreground: 0 0% 100%; /* #FFFFFF */
 
-    --card: 250 17% 18%; /* #28243A, slightly lighter for cards */
+    /* Glassmorphic color palette */
+    --glass-light: 22 27% 80%; /* #dac9bf - Light glass surface */
+    --glass-dark: 300 3% 13%; /* #232123 - Dark glass surface */
+    
+    --card: rgba(35, 33, 35, 0.7); /* Semi-transparent dark glass */
     --card-foreground: 0 0% 100%; /* #FFFFFF */
 
-    --popover: 250 17% 18%; /* #28243A */
+    --popover: rgba(35, 33, 35, 0.7); /* Semi-transparent dark glass */
     --popover-foreground: 0 0% 100%; /* #FFFFFF */
 
     --primary: 257 17% 65%; /* #928DAB Muted Lavender */
     --primary-foreground: 250 17% 14%; /* #1F1C2C */
     --primary-hover: 257 17% 55%; /* darker Lavender */
 
-    --secondary: 250 17% 40%; /* #5B5670 */
-    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary: rgba(218, 201, 191, 0.7); /* Light glass surface */
+    --secondary-foreground: 250 17% 14%; /* Dark text on light glass */
 
-    --muted: 250 17% 12%; /* #191726, muted navy */
-    --muted-foreground: 257 17% 65%; /* #928DAB */
+    --muted: rgba(35, 33, 35, 0.7); /* Semi-transparent dark glass */
+    --muted-foreground: 0 0% 85%; /* Light gray for better contrast */
 
-    --accent: 257 17% 65%; /* #928DAB Muted Lavender */
-    --accent-foreground: 250 17% 14%; /* #1F1C2C */
+    --accent: rgba(218, 201, 191, 0.7); /* Light glass accent */
+    --accent-foreground: 250 17% 14%; /* Dark text on light glass */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 250 17% 22%; /* #342F48, navy border */
-    --input: 250 17% 22%; /* #342F48 */
+    --border: rgba(255, 255, 255, 0.3); /* Glass border */
+    --input: rgba(35, 33, 35, 0.7); /* Glass input background */
     --ring: 257 17% 65%; /* #928DAB Muted Lavender */
 
     /* Custom design tokens */
@@ -46,11 +50,13 @@
       hsl(var(--primary)) 0%,
       hsl(var(--accent)) 100%
     );
+    
+    /* Glassmorphic shadows */
     --shadow-soft: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1),
-      0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.25); /* Glassmorphic floating effect */
+    
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
@@ -123,5 +129,56 @@
   }
   body {
     -ms-overflow-style: none; /* IE and Edge */
+  }
+}
+
+/* Glassmorphic utility classes */
+@layer utilities {
+  .glass {
+    background: rgba(35, 33, 35, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-light {
+    background: rgba(218, 201, 191, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-strong {
+    background: rgba(35, 33, 35, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .glass-hover:hover {
+    transform: scale(1.02);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  }
+  
+  .glass-button {
+    background: rgba(35, 33, 35, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: var(--transition-smooth);
+  }
+  
+  .glass-button:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(35, 33, 35, 0.9);
   }
 }

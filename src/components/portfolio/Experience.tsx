@@ -73,20 +73,22 @@ const Experience = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Professional Experience
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Building scalable backend solutions across different industries
-              and technologies
-            </p>
+            <div className="glass-light rounded-2xl p-6 w-fit mx-auto mb-8">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Professional Experience
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Building scalable backend solutions across different industries
+                and technologies
+              </p>
+            </div>
           </div>
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <Card
                 key={index}
-                className="border-0 shadow-medium hover:shadow-large transition-shadow"
+                className="glass border-0 rounded-2xl glass-hover transition-all duration-300"
               >
                 <CardHeader className="pb-4">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -129,7 +131,7 @@ const Experience = () => {
                     {exp.technologies.map((tech) => (
                       <div
                         key={tech}
-                        className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-muted text-foreground border border-border"
+                        className="glass-light rounded-full px-3 py-1 text-xs font-semibold border border-glass-border hover:border-glass-border-hover transition-all duration-300 hover:scale-105 cursor-default"
                       >
                         {tech}
                       </div>

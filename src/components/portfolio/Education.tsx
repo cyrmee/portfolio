@@ -41,12 +41,14 @@ const Education = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Education & Certifications
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Academic background and professional certifications
-            </p>
+            <div className="glass-light rounded-2xl p-6 w-fit mx-auto mb-8">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Education & Certifications
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Academic background and professional certifications
+              </p>
+            </div>
           </div>
 
           <div className="space-y-8">
