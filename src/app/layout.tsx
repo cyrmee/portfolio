@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://msho7drretuycth4.public.blob.vercel-storage.com/2U7A4262.webp" />
       </head>
       <body>
         {children}
