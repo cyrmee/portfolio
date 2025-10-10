@@ -129,7 +129,7 @@ const Experience = () => {
                     {exp.technologies.map((tech) => (
                       <div
                         key={tech}
-                        className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-muted text-foreground border border-border"
+                        className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-foreground border border-border"
                       >
                         {tech}
                       </div>

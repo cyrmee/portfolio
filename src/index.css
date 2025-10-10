@@ -9,7 +9,7 @@
     --background: 22 27% 80%; /* #DAC9BF Light beige background */
     --foreground: 300 3% 13%; /* #232123 Dark gray text */
 
-    --card: 22 27% 85%; /* Lighter beige for cards */
+    --card: 22 27% 78%; /* Slightly darker beige for cards, closer to background */
     --card-foreground: 300 3% 13%; /* #232123 Dark gray text */
 
     --popover: 22 27% 85%; /* Lighter beige for popovers */
