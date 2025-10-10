@@ -67,7 +67,7 @@ const Projects = () => {
                       <Badge
                         key={tech}
                         variant="secondary"
-                        className="bg-muted text-foreground border border-border"
+                        className="bg-white text-foreground border border-border"
                       >
                         {tech}
                       </Badge>

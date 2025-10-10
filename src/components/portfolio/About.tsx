@@ -63,10 +63,6 @@ const About = () => {
             <h2 className="text-4xl font-bold text-foreground mb-4">
               About Me
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A results-driven backend engineer passionate about building
-              robust, scalable systems
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -76,15 +72,15 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I see backend engineering as a form of translation — turning
+                  I see backend engineering as a form of translation, turning
                   complex needs into simple, reliable solutions. For me, it’s
                   not just about writing code, but about creating systems that
                   genuinely make people’s lives easier.
                 </p>
                 <p>
-                  I’m always learning the next “language” — technical or
-                  otherwise — that helps me solve hard engineering problems and
-                  build technology that works for people
+                  I’m always learning the next “language”, technical or
+                  otherwise, that helps me solve hard engineering problems and
+                  build technology that works for people.
                 </p>
                 <div className="flex items-center space-x-4 text-sm">
                   <div className="flex items-center">
@@ -93,7 +89,14 @@ const About = () => {
                   </div>
                   <div className="flex items-center">
                     <LuCalendar className="h-4 w-4 mr-1 text-primary" />
-                    Available for opportunities
+                    <a 
+                      href="https://calendly.com/cyrmee" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors"
+                    >
+                      Let's schedule a conversation
+                    </a>
                   </div>
                 </div>
               </div>
@@ -131,7 +134,7 @@ const About = () => {
                   {skills.map((skill) => (
                     <Badge
                       key={skill}
-                      className="px-4 py-2 text-sm font-medium bg-muted text-foreground border border-border hover:bg-primary hover:text-primary-foreground transition-colors cursor-default shadow-soft"
+                      className="px-4 py-2 text-sm font-medium bg-white text-foreground border border-border hover:bg-primary hover:text-primary-foreground transition-colors cursor-default shadow-soft"
                     >
                       {skill}
                     </Badge>
