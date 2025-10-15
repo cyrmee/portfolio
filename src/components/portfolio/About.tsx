@@ -63,10 +63,6 @@ const About = () => {
             <h2 className="text-4xl font-bold text-foreground mb-4">
               About Me
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A results-driven backend engineer passionate about building
-              robust, scalable systems
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -75,17 +71,6 @@ const About = () => {
                 Overview
               </h3>
               <div className="space-y-4 text-muted-foreground">
-                <p>
-                  I see backend engineering as a form of translation — turning
-                  complex needs into simple, reliable solutions. For me, it’s
-                  not just about writing code, but about creating systems that
-                  genuinely make people’s lives easier.
-                </p>
-                <p>
-                  I’m always learning the next “language” — technical or
-                  otherwise — that helps me solve hard engineering problems and
-                  build technology that works for people
-                </p>
                 <div className="flex items-center space-x-4 text-sm">
                   <div className="flex items-center">
                     <LuMapPin className="h-4 w-4 mr-1 text-primary" />
